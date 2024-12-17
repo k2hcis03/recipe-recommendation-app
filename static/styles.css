@@ -1,0 +1,6 @@
+/* 추가적인 커스텀 스타일이 필요한 경우 여기에 작성 */
+
+.custom-hover:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}

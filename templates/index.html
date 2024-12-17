@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-8">목적별 레시피 추천</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <a href="/recipes/다이어트" class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow text-center overflow-hidden">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" 
+                     alt="다이어트 음식" 
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <h2 class="text-xl font-semibold">다이어트</h2>
+                <p class="text-gray-600 mt-2">건강한 다이어트 레시피</p>
+            </div>
+        </a>
+        
+        <a href="/recipes/건강" class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow text-center overflow-hidden">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" 
+                     alt="건강 음식" 
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <h2 class="text-xl font-semibold">건강</h2>
+                <p class="text-gray-600 mt-2">영양가 높은 건강식</p>
+            </div>
+        </a>
+        
+        <a href="/recipes/기념일" class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow text-center overflow-hidden">
+            <div class="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" 
+                     alt="기념일 음식" 
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <h2 class="text-xl font-semibold">기념일</h2>
+                <p class="text-gray-600 mt-2">특별한 날을 위한 레시피</p>
+            </div>
+        </a>
+    </div>
+</div>
+{% endblock %} 
